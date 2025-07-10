@@ -1,0 +1,32 @@
+START
+
+DISPLAY "Enter student's score (0 - 100):"
+READ score
+
+IF score is not a number THEN
+    DISPLAY "Invalid input: please enter a numeric value."
+
+    IF score < 0 OR score > 100 THEN
+        DISPLAY "Invalid score: must be between 0 and 100"
+    
+    ELSE IF score >= 70 THEN
+        DISPLAY "Grade: A"
+    
+    ELSE IF score >= 60 THEN
+        DISPLAY "Grade: B"
+    
+    ELSE IF score >= 50 THEN
+        DISPLAY "Grade: C"
+    
+    ELSE IF score >= 45 THEN
+        DISPLAY "Grade: D"
+    
+    ELSE IF score >= 40 THEN
+        DISPLAY "Grade: E"
+    
+    ELSE
+        DISPLAY "Grade: F"
+
+END IF
+
+END
